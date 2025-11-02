@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos sociais - ONG Esperança viva</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <h1>Projetos sociais</h1>
+
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav>
+                <ul id="menu">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                </ul>
+            </nav>
+
+        </div>
+        
+    </header>
+
+    <main class="container">
+
+        <section id="voluntariado">
+            <h2>Seja um voluntario</h2>
+            <p>Participe de nossos projetos sociais e faça parte da transformação!</p>
+            <img src="img/voluntarios-em-acao.jpg" alt="Voluntários em ação em um projeto social" width="100%" class="margin-x">
+            <a href="cadastro.html" class="btn">Quero ser voluntário</a>
+        </section>
+
+        <section id="doacoes">
+            <h2 class="margin-x">Como Doar</h2>
+            <p>Suas doações nos ajudam a continuar impactando vidas. Doe qualquer valor e contribua para nossos projetos.</p>
+            <img src="img/pessoa-fazendo-doacao.jpg" alt="Pessoa fazendo doação" width="100%" height="20%">
+            <p>Chave Pix: <strong>contato@ongesperancaviva.org</strong></p>
+        </section>
+
+        <section id="projetos">
+            <h2>Nossos Projetos</h2>
+            <div class="grid">
+
+                <div class="card">
+                    <article>
+                        <h3>Projeto Sementes do Futuro</h3>
+                        <p>Iniciativa voltada à educação de crianças em situação de vulnerabilidade social.</p>
+                    </article>
+                </div>
+
+                <div class="card">
+                    <article>
+                        <h3>Projeto Mãos Solidárias</h3>
+                        <p>Distribuição de cestas básicas e roupas para famílias carentes.</p>
+                    </article>
+                </div>
+
+            </div>
+           
+            
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ONG Esperança Viva</p>
+    </footer>
+
+    <script>
+        const toggle = document.getElementById("menu-toggle");
+        const menu = document.getElementById("menu");
+        toggle.addEventListener("click", () => {
+          menu.classList.toggle("show");
+        });
+      </script>
+
+</body>
+</html>
