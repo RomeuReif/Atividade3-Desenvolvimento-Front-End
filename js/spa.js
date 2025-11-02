@@ -52,5 +52,25 @@ const routes = {
     `
 };
 
+export function initSPA(){
+    const main = document.querySelector("main");
+    const links = document.querySelectorAll("nav a");
 
+    links.forEach(link => {
+        link.addEventListener("click", e => {
+            e.preventDefault();
+            const page = link.getAttribute("href").replace(".html", "");
+            main.innerHTML = routes[page] || routes.home;
+            window.history.pushState({}, "", `${page}.html`);
+
+            if (page == "cadastro") {
+                import("./formValidator.js").then(module => {
+                    module.enableValidation();
+                });
+            };
+        });
+    });
+
+    main.innerHTML = routes.home;
+}
 
