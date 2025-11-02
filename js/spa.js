@@ -20,6 +20,37 @@ const routes = {
                 </div>
             </div>
     </section>
+    `,
+    cadastro: `
+        <section id="formulario">
+            <h2>Cadastro de Voluntário</h2>
+            <form id="formCadastro">
+                <fieldset>
+                    <legend>Informações Pessoais</legend>
+                    <label>Nome Completo:</label>
+                    <input type="text" id="nome" required>
+                    <label>E-mail:</label>
+                    <input type="email" id="email" required>
+                    <label>Telefone:</label>
+                    <input type="tel" id="telefone" placeholder="(47) 99999-9999" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Endereço</legend>
+                    <label>Cidade:</label>
+                    <input type="text" id="cidade" required>
+                    <label>Estado:</label>
+                    <select id="estado" required>
+                        <option value="">Selecione</option>
+                        <option value="SC">SC</option>
+                        <option value="PR">PR</option>
+                        <option value="RS">RS</option>
+                    </select>
+                </fieldset>
+                <button type="submit" class="btn">Enviar Cadastro</button>
+            </form>
+    </section>
     `
 };
+
+
 
